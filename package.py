@@ -14,7 +14,7 @@ description = \
     """
 
 requires = [
-    "cmake-3+"
+    "cmake-3"
 ]
 
 variants = [
