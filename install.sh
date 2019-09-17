@@ -1,5 +1,8 @@
 #!/usr/bin/bash
 
+# Will exit the Bash script the moment any command will itself exit with a non-zero status, thus an error.
+set -e
+
 EXTRACT_PATH=$1
 INSTALL_PATH=${REZ_BUILD_INSTALL_PATH}
 VSCODE_VERSION=${REZ_BUILD_PROJECT_VERSION}
@@ -17,7 +20,7 @@ echo -e "[INSTALL][ARGS] VSCODE VERSION: ${VSCODE_VERSION}"
 
 cd ${EXTRACT_PATH}
 
-# We finally install VSCode
+# We install VSCode
 echo -e "\n"
 echo -e "[INSTALL] Installing VSCode-${VSCODE_VERSION}..."
 
