@@ -11,7 +11,8 @@ echo -e "=== INSTALL ==="
 echo -e "==============="
 echo -e "\n"
 
-echo -e "[INSTALL][ARGS] BUILD PATH: ${EXTRACT_PATH}"
+echo -e "[INSTALL][ARGS] EXTRACT PATH: ${EXTRACT_PATH}"
+echo -e "[INSTALL][ARGS] INSTALL PATH: ${INSTALL_PATH}"
 echo -e "[INSTALL][ARGS] VSCODE VERSION: ${VSCODE_VERSION}"
 
 cd ${EXTRACT_PATH}
