@@ -14,7 +14,7 @@ description = \
     """
 
 requires = [
-    "cmake-3"
+    "cmake-3+"
 ]
 
 variants = [
@@ -30,8 +30,10 @@ build_system = "cmake"
 with scope("config") as config:
     config.build_thread_count = "logical_cores"
 
-#TODO: Use the SHA1 of the archive instead.
-uuid = "vscode-1.x.x"
+uuid = "vscode-{version}".format(version=str(version))
 
 def commands():
     env.PATH.prepend("{root}/bin")
+
+    # Helper environment variables.
+    env.VSCODE_BINARY_PATH.set("{root}/bin")

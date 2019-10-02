@@ -18,6 +18,16 @@ echo -e "[INSTALL][ARGS] EXTRACT PATH: ${EXTRACT_PATH}"
 echo -e "[INSTALL][ARGS] INSTALL PATH: ${INSTALL_PATH}"
 echo -e "[INSTALL][ARGS] VSCODE VERSION: ${VSCODE_VERSION}"
 
+# We check if the arguments variables we need are correctly set.
+# If not, we abort the process.
+if [[ -z ${EXTRACT_PATH} || -z ${INSTALL_PATH} || -z ${VSCODE_VERSION} ]]; then
+    echo -e "\n"
+    echo -e "[INSTALL][ARGS] One or more of the argument variables are empty. Aborting..."
+    echo -e "\n"
+
+    exit 1
+fi
+
 # We install VSCode.
 echo -e "\n"
 echo -e "[INSTALL] Installing VSCode-${VSCODE_VERSION}..."
