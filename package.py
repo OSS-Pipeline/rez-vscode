@@ -1,6 +1,6 @@
 name = "vscode"
 
-version = "1.x.x"
+version = "1.39.2"
 
 authors = [
     "Microsoft"

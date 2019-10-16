@@ -10,7 +10,7 @@ rez_set_archive(
     # that is pointing to the root directory where we can find all the archives of the package
     # we can build, using the following hierarchy:
     # "${REZ_REPO_PAYLOAD_DIR}/project_name/archive.what.ever"
-    VSCODE_URL vscode/code-stable-1570604664.tar.gz
+    VSCODE_URL vscode/code-stable-1571154019.tar.gz
     https://go.microsoft.com/fwlink/?LinkID=620884
 )
 
